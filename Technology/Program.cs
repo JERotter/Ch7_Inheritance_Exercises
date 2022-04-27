@@ -7,7 +7,7 @@ namespace Technology
         static void Main(string[] args)
         {
             //Computer(string year, string color, string os)
-            Computer newMac = new Computer("2020","Red","Mac OS", 2.0);
+            Computer newMac = new Computer("2020","Red","Mac OS", 2.0, 8);
             Console.WriteLine(Computer.HasHardDrive);
             Console.WriteLine(newMac.Color);
             Console.WriteLine(newMac.Version);
@@ -15,21 +15,28 @@ namespace Technology
             Console.WriteLine();
 
             //Laptop(screenSz,year,color,os,version)
-            Laptop macBook = new Laptop(13.5, "2019", "silver", "Mac OS", 3.0);
+            Laptop macBook = new Laptop(13.5, "2019", "silver", "Mac OS", 3.0, 8);
             Console.WriteLine(macBook.Color);
             Console.WriteLine(macBook.ScreenSz);
             Console.WriteLine(macBook.Version);
             macBook.UpdateVersion();
+            Console.WriteLine(macBook.Ram);
+            macBook.IncreaseRam();
+            Console.WriteLine(macBook.Ram);
             Console.WriteLine();
 
             //SmartPhone(weightInGrams, year, color, os, version)
-            SmartPhone galaxy10 = new SmartPhone("157g", "2022", "pink", "Droid", 6.0);
+            SmartPhone galaxy10 = new SmartPhone("157g", "2022", "pink", "Droid", 6.0, 8);
             Console.WriteLine(galaxy10.Color);
             Console.WriteLine(galaxy10.WeightInGrams);
             Console.WriteLine(galaxy10.Version);
             galaxy10.UpdateVersion();
+            Console.WriteLine(galaxy10.Ram);
+            galaxy10.DecreaseRam();
+            Console.WriteLine(galaxy10.Ram);
             Console.WriteLine();
 
         }
+        
     }
 }

@@ -5,10 +5,15 @@ namespace Technology
     {
         public double ScreenSz { get; set; }
 
-        public Laptop(double screenSz, string year, string color, string os, double version): base (year, color, os, version)
+        public Laptop(double screenSz, string year, string color, string os, double version, double ram) : base (year, color, os, version, ram)
         {
             ScreenSz = screenSz;
 
+        }
+
+        public void IncreaseRam()
+        {
+            Ram = this.Ram + 4;
         }
     }
 }

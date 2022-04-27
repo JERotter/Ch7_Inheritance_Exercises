@@ -8,15 +8,17 @@ namespace Technology
         public string Color {get; set;}
         public string Os {get; set;}
         public double Version {get; set;}
+        public double Ram {get; set;}
         
 
-        public Computer(string year, string color, string os, double version)
+        public Computer(string year, string color, string os, double version, double ram)
         {
             //HardDrive = true;
             Year = year;
             Color = color;
             Os = os;
             Version = version;
+            Ram = ram;
 
         }
 
